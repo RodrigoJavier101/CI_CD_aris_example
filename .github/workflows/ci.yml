@@ -2,14 +2,13 @@ name: Android CI
 
 on:
   push:
-    branches: [ "ci/cd", "master" ]
+    branches: [ "cicd_yo", "master" ]
   pull_request:
-    branches: [ "ci/cd", "master" ]
+    branches: [ "cicd_yo", "master" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
 
     steps:
       - uses: actions/checkout@v3
